@@ -20,7 +20,7 @@ function printCalender($month)
     }
     ?>
     <table>
-    <caption><? echo $month; ?></caption>
+    <caption><?PHP echo $month; ?></caption>
         <thead>
             <tr>
                 <th abbr="Sunday" scope="col" title="Sunday">S</th>
@@ -34,7 +34,7 @@ function printCalender($month)
         </thead>
         <tbody>
         <tr>
-            <?
+            <?PHP
             if(0 != $dayOfWeek) {
                 for($i = 0; $i < $dayOfWeek; $i++){
                     echo "<td></td>";
